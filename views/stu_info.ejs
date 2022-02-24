@@ -1,0 +1,31 @@
+<link rel='stylesheet' href='./css/stu_info.css' />
+
+<body>
+    <table id="customers">
+        <tr>
+            <th>MSSV</th>
+            <th>Nganh</th>
+            <th>Hoten</th>
+            <th>CMND</th>
+            <th>NgaySinh</th>
+            <th>GioiTinh</th>
+            <th>QueQuan</th>
+            <th>SDT</th>
+            <th>Email</th>
+        </tr>
+        <% for(var i=0; i < student.length; i++) { %>
+            <tr>
+              <td><%= student[i].MSSV %></td>
+              <td><%= student[i].Nganh %></td>
+              <td><%= student[i].Hoten %></td>
+              <td><%= student[i].CMND %></td>
+              <td><%= student[i].NgaySinh %></td>
+              <td><%= student[i].GioiTinh %></td>
+              <td><%= student[i].QueQuan %></td>
+              <td><%= student[i].SDT %></td>
+              <td><%= student[i].Email %></td>
+            </tr>
+         <% } %>
+    </table>
+
+</body>
